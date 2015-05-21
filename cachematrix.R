@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
--## Write a short comment describing this function
 ##   makeCacheMatrix is a function that stores a list of functions. 
 ##  makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
 ##  makeCacheMatrix contains 4 functions: set, get, setmean, getmean.
@@ -53,6 +50,6 @@
         inv1 <- solve(data, ...)                         ##  computes the inverse of a square invertible matrix
         x$setinv(inv1)                                               
         inv <- inv1                                      ##  stores inv1 into inv in the main function makeCacheMatrix
-+        
-+        inv1                                            ##  outputs inv1    
+       
+        inv1                                             ##  outputs inv1    
  }
