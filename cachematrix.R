@@ -8,20 +8,20 @@
         inv <- NULL                             ##   restores to null the value of the inverse inv
        
         
-        set <- function(y) {                    ##  set is a function that changes the vector stored in                                                              ##  the main function.
+        set <- function(y) {                    ## set is a function that changes the input argument x to y stored in the main function.                                                          
                 x <<- y  
                 inv <<- NULL
         }
         
-       get <- function() {                     ##  get is a function that extracts and returns the vector x                                                               ##  stored in the main function. Doesn't require any input.
+       get <- function() {                     ## get is a function that extracts and returns the matrix x stored in the main function. Doesn't require any input.
                 x
         }         
         
-        setinv <- function(inverse) {           ##   stores inverse into inv in the main function makeCacheMatrix
+        setinv <- function(inverse) {          ##   stores inverse into inv in the main function makeCacheMatrix
                 inv <<- inverse                                               
         }
         
-        getinv <- function() {                  ##   gets the value of inv in the main function makeCacheMatrix
+        getinv <- function() {                ##   gets the value of inv in the main function makeCacheMatrix
                 inv
         }
         
